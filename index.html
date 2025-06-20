@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Quiz + Carousel + Joke</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🎯 Fun Quiz + Image Carousel</h1>
+
+    <!-- Quiz Section -->
+    <div id="quiz">
+      <p id="question"></p>
+      <div id="answers"></div>
+      <button onclick="nextQuestion()">Next</button>
+    </div>
+
+    <!-- Result Section -->
+    <div id="result"></div>
+
+    <!-- Image Carousel -->
+    <div id="carousel" style="display: none;">
+      <h2>🖼️ Image Carousel</h2>
+      <img id="carousel-image" src="img1.jpg" alt="Image Carousel" />
+      <div class="buttons">
+        <button onclick="prevImage()">⏮️ Previous</button>
+        <button onclick="nextImage()">⏭️ Next</button>
+      </div>
+    </div>
+
+    <!-- Joke Section -->
+    <div id="joke-box" style="display: none;">
+      <h2>😂 Here's a Joke</h2>
+      <p id="joke-text">You'll see a joke after the quiz!</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
